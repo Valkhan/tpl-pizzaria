@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Delícia - A melhor pizza de São Paulo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-pizza-slice"></i>
+                    <span>Pizzaria Delícia</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Pizzaria Delícia</h1>
+            <p>A melhor pizza de São Paulo, feita com amor e ingredientes frescos</p>
+            <a href="#cardapio" class="btn-primary">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h3>Nossa História</h3>
+                    <p>Desde 1985, a Pizzaria Delícia tem sido sinônimo de qualidade e tradição em São Paulo. Começamos como uma pequena pizzaria familiar e hoje somos reconhecidos como uma das melhores da cidade.</p>
+                    <p>Nosso segredo está na receita tradicional italiana, passada de geração em geração, combinada com ingredientes frescos e selecionados diariamente.</p>
+                    
+                    <div class="horario">
+                        <h4><i class="fas fa-clock"></i> Horário de Funcionamento</h4>
+                        <div class="horario-grid">
+                            <div class="horario-item">
+                                <span>Segunda a Quinta</span>
+                                <span>18:00 - 23:00</span>
+                            </div>
+                            <div class="horario-item">
+                                <span>Sexta e Sábado</span>
+                                <span>18:00 - 00:00</span>
+                            </div>
+                            <div class="horario-item">
+                                <span>Domingo</span>
+                                <span>18:00 - 22:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Interior da Pizzaria Delícia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="cardapio">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            
+            <div class="cardapio-categories">
+                <button class="category-btn active" data-category="pizzas">Pizzas</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+            </div>
+
+            <div class="cardapio-content">
+                <!-- Pizzas -->
+                <div class="category-items pizzas active">
+                    <div class="pizza-item">
+                        <div class="pizza-info">
+                            <h3>Margherita</h3>
+                            <p>Molho de tomate, mussarela, manjericão fresco e azeite</p>
+                            <div class="pizza-prices">
+                                <span class="size">Pequena: R$ 25,90</span>
+                                <span class="size">Média: R$ 35,90</span>
+                                <span class="size">Grande: R$ 45,90</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Pizza Margherita">
+                    </div>
+
+                    <div class="pizza-item">
+                        <div class="pizza-info">
+                            <h3>Pepperoni</h3>
+                            <p>Molho de tomate, mussarela e pepperoni</p>
+                            <div class="pizza-prices">
+                                <span class="size">Pequena: R$ 29,90</span>
+                                <span class="size">Média: R$ 39,90</span>
+                                <span class="size">Grande: R$ 49,90</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80" alt="Pizza Pepperoni">
+                    </div>
+
+                    <div class="pizza-item">
+                        <div class="pizza-info">
+                            <h3>Quattro Formaggi</h3>
+                            <p>Molho branco, mussarela, gorgonzola, parmesão e provolone</p>
+                            <div class="pizza-prices">
+                                <span class="size">Pequena: R$ 32,90</span>
+                                <span class="size">Média: R$ 42,90</span>
+                                <span class="size">Grande: R$ 52,90</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1548365328-8b849e6c7b8b?auto=format&fit=crop&w=1000&q=80" alt="Pizza Quattro Formaggi">
+                    </div>
+
+                    <div class="pizza-item">
+                        <div class="pizza-info">
+                            <h3>Portuguesa</h3>
+                            <p>Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas</p>
+                            <div class="pizza-prices">
+                                <span class="size">Pequena: R$ 34,90</span>
+                                <span class="size">Média: R$ 44,90</span>
+                                <span class="size">Grande: R$ 54,90</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=1000&q=80" alt="Pizza Portuguesa">
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="category-items bebidas">
+                    <div class="menu-item">
+                        <span class="item-name">Refrigerante Lata</span>
+                        <span class="item-price">R$ 4,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Refrigerante 2L</span>
+                        <span class="item-price">R$ 8,90</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Água Mineral</span>
+                        <span class="item-price">R$ 3,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Suco Natural</span>
+                        <span class="item-price">R$ 6,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Cerveja Long Neck</span>
+                        <span class="item-price">R$ 5,90</span>
+                    </div>
+                </div>
+
+                <!-- Sobremesas -->
+                <div class="category-items sobremesas">
+                    <div class="menu-item">
+                        <span class="item-name">Pizza Doce - Chocolate</span>
+                        <span class="item-price">R$ 28,90</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Pizza Doce - Brigadeiro</span>
+                        <span class="item-price">R$ 29,90</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Pudim</span>
+                        <span class="item-price">R$ 8,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Sorvete</span>
+                        <span class="item-price">R$ 7,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Rua das Pizzas, 123<br>São Paulo, SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 96557-2558</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:vendas@valkhan.com.br?subject=Quero fazer um site para pizzaria">vendas@valkhan.com.br</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/5511965572558?text=Olá, gostaria de fazer um site para minha pizzaria." target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contato-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="mapa">
+                <h3>Como Chegar</h3>
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1068781183595!2d-46.65420368502297!3d-23.564515984676357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt!2sbr!4v1640995200000!5m2!1spt!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Pizzaria Delícia</span>
+                    </div>
+                    <p>A melhor pizza de São Paulo desde 1985</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Rua das Pizzas, 123 - São Paulo, SP</p>
+                    <p>(11) 96557-2558</p>
+                    <p>vendas@valkhan.com.br</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horários</h4>
+                    <p>Segunda a Quinta: 18:00 - 23:00</p>
+                    <p>Sexta e Sábado: 18:00 - 00:00</p>
+                    <p>Domingo: 18:00 - 22:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pizzaria Delícia. Todos os direitos reservados. | <a href="https://valkhan.com.br" target="_blank" style="color:#fff;text-decoration:underline;">Valkhan Tech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+// Variáveis
+$primary-color: #e63946
+$secondary-color: #f77f00
+$dark-color: #2d3436
+$light-color: #ddd
+$white: #ffffff
+$text-dark: #2d3436
+$text-light: #636e72
+
+// Mixins
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin transition($property: all, $duration: 0.3s)
+  transition: $property $duration ease
+
+@mixin box-shadow($x: 0, $y: 5px, $blur: 15px, $color: rgba(0,0,0,0.1))
+  box-shadow: $x $y $blur $color
+
+// Reset e Base
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+body
+  font-family: 'Roboto', sans-serif
+  line-height: 1.6
+  color: $text-dark
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 20px
+
+// Typography
+h1, h2, h3, h4
+  font-family: 'Oswald', sans-serif
+  margin-bottom: 1rem
+
+.section-title
+  text-align: center
+  font-size: 2.5rem
+  color: $dark-color
+  margin-bottom: 3rem
+  position: relative
+  
+  &::after
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 50%
+    transform: translateX(-50%)
+    width: 80px
+    height: 3px
+    background: linear-gradient(45deg, $primary-color, $secondary-color)
+
+// Buttons
+.btn-primary
+  display: inline-block
+  background: linear-gradient(45deg, $primary-color, $secondary-color)
+  color: $white
+  text-decoration: none
+  padding: 12px 30px
+  border-radius: 25px
+  font-weight: 500
+  @include transition()
+  border: none
+  cursor: pointer
+  
+  &:hover
+    transform: translateY(-2px)
+    @include box-shadow(0, 7px, 20px, rgba(230, 57, 70, 0.3))
+
+// Header
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  background: rgba(255, 255, 255, 0.95)
+  backdrop-filter: blur(10px)
+  z-index: 1000
+  @include box-shadow()
+
+.navbar
+  padding: 1rem 0
+
+.nav-container
+  @include flex-center
+  justify-content: space-between
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 20px
+
+.logo
+  @include flex-center
+  font-family: 'Oswald', sans-serif
+  font-size: 1.5rem
+  font-weight: 600
+  color: $primary-color
+  
+  i
+    margin-right: 10px
+    font-size: 1.8rem
+
+.nav-menu
+  @include flex-center
+  list-style: none
+  gap: 2rem
+  
+  @media (max-width: 768px)
+    position: fixed
+    top: 70px
+    left: -100%
+    width: 100%
+    height: calc(100vh - 70px)
+    background: rgba(255, 255, 255, 0.95)
+    backdrop-filter: blur(10px)
+    flex-direction: column
+    @include transition(left)
+    
+    &.active
+      left: 0
+
+.nav-link
+  text-decoration: none
+  color: $text-dark
+  font-weight: 500
+  @include transition()
+  
+  &:hover
+    color: $primary-color
+
+.hamburger
+  display: none
+  flex-direction: column
+  cursor: pointer
+  
+  @media (max-width: 768px)
+    display: flex
+  
+  span
+    width: 25px
+    height: 3px
+    background: $dark-color
+    margin: 3px 0
+    @include transition()
+    
+  &.active span:nth-child(1)
+    transform: rotate(-45deg) translate(-5px, 6px)
+    
+  &.active span:nth-child(2)
+    opacity: 0
+    
+  &.active span:nth-child(3)
+    transform: rotate(45deg) translate(-5px, -6px)
+
+// Hero Section
+.hero
+  height: 100vh
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+  background-size: cover
+  background-position: center
+  @include flex-center
+  text-align: center
+  color: $white
+  position: relative
+
+.hero-content
+  max-width: 600px
+  padding: 0 20px
+  
+  h1
+    font-size: 3.5rem
+    margin-bottom: 1rem
+    animation: fadeInUp 1s ease
+    
+    @media (max-width: 768px)
+      font-size: 2.5rem
+  
+  p
+    font-size: 1.2rem
+    margin-bottom: 2rem
+    animation: fadeInUp 1s ease 0.3s both
+
+  .btn-primary
+    animation: fadeInUp 1s ease 0.6s both
+
+// Sobre Section
+.sobre
+  padding: 80px 0
+  background: $white
+
+.sobre-content
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 4rem
+  align-items: center
+  
+  @media (max-width: 768px)
+    grid-template-columns: 1fr
+    gap: 2rem
+
+.sobre-text
+  h3
+    color: $primary-color
+    margin-bottom: 1rem
+    font-size: 1.8rem
+
+  p
+    margin-bottom: 1.5rem
+    color: $text-light
+    line-height: 1.8
+
+.horario
+  margin-top: 2rem
+  padding: 2rem
+  background: #f8f9fa
+  border-radius: 10px
+  
+  h4
+    @include flex-center
+    justify-content: flex-start
+    margin-bottom: 1.5rem
+    color: $dark-color
+    
+    i
+      margin-right: 10px
+      color: $primary-color
+
+.horario-grid
+  display: grid
+  gap: 1rem
+
+.horario-item
+  display: flex
+  justify-content: space-between
+  padding: 0.5rem 0
+  border-bottom: 1px solid #e0e0e0
+  
+  &:last-child
+    border-bottom: none
+
+.sobre-image
+  img
+    width: 100%
+    border-radius: 15px
+    @include box-shadow()
+
+// Cardápio Section
+.cardapio
+  padding: 80px 0
+  background: #f8f9fa
+
+.cardapio-categories
+  @include flex-center
+  gap: 1rem
+  margin-bottom: 3rem
+  flex-wrap: wrap
+
+.category-btn
+  padding: 10px 25px
+  border: 2px solid $primary-color
+  background: transparent
+  color: $primary-color
+  border-radius: 25px
+  cursor: pointer
+  font-weight: 500
+  @include transition()
+  
+  &:hover, &.active
+    background: $primary-color
+    color: $white
+
+.category-items
+  display: none
+  
+  &.active
+    display: block
+
+.pizza-item
+  display: grid
+  grid-template-columns: 1fr auto
+  gap: 2rem
+  align-items: center
+  padding: 2rem
+  background: $white
+  border-radius: 15px
+  margin-bottom: 2rem
+  @include box-shadow()
+  @include transition()
+  
+  @media (max-width: 768px)
+    grid-template-columns: 1fr
+    text-align: center
+  
+  &:hover
+    transform: translateY(-5px)
+    @include box-shadow(0, 10px, 30px, rgba(0,0,0,0.15))
+
+.pizza-info
+  h3
+    color: $dark-color
+    margin-bottom: 0.5rem
+    font-size: 1.5rem
+
+  p
+    color: $text-light
+    margin-bottom: 1rem
+
+.pizza-prices
+  display: flex
+  flex-direction: column
+  gap: 0.5rem
+
+.size
+  padding: 5px 15px
+  background: #f0f0f0
+  border-radius: 20px
+  font-size: 0.9rem
+  font-weight: 500
+
+.pizza-item img
+  width: 150px
+  height: 150px
+  border-radius: 15px
+  object-fit: cover
+
+.menu-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 1.5rem
+  background: $white
+  border-radius: 10px
+  margin-bottom: 1rem
+  @include box-shadow()
+  
+  .item-name
+    font-weight: 500
+    color: $dark-color
+    
+  .item-price
+    font-weight: 600
+    color: $primary-color
+    font-size: 1.1rem
+
+// Contato Section
+.contato
+  padding: 80px 0
+  background: $white
+
+.contato-content
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 4rem
+  margin-bottom: 4rem
+  
+  @media (max-width: 768px)
+    grid-template-columns: 1fr
+    gap: 2rem
+
+.info-item
+  @include flex-center
+  justify-content: flex-start
+  margin-bottom: 2rem
+  
+  i
+    font-size: 1.5rem
+    color: $primary-color
+    margin-right: 1rem
+    min-width: 30px
+
+  h3
+    color: $dark-color
+    margin-bottom: 0.5rem
+    
+  p
+    color: $text-light
+    
+  a
+    color: $primary-color
+    text-decoration: none
+    @include transition()
+    
+    &:hover
+      text-decoration: underline
+
+.social-links
+  margin-top: 2rem
+
+.whatsapp-btn
+  @include flex-center
+  background: #25d366
+  color: $white
+  text-decoration: none
+  padding: 12px 25px
+  border-radius: 25px
+  font-weight: 500
+  @include transition()
+  
+  i
+    margin-right: 10px
+    font-size: 1.2rem
+  
+  &:hover
+    background: #128c7e
+    transform: translateY(-2px)
+
+// Form
+.contato-form
+  background: #f8f9fa
+  padding: 2rem
+  border-radius: 15px
+
+.form-group
+  margin-bottom: 1.5rem
+
+.form-group input,
+.form-group textarea
+  width: 100%
+  padding: 15px
+  border: 2px solid #e0e0e0
+  border-radius: 10px
+  font-size: 1rem
+  @include transition()
+  
+  &:focus
+    outline: none
+    border-color: $primary-color
+
+// Mapa
+.mapa
+  h3
+    text-align: center
+    margin-bottom: 2rem
+    color: $dark-color
+
+.mapa-container
+  border-radius: 15px
+  overflow: hidden
+  @include box-shadow()
+
+// Footer
+.footer
+  background: $dark-color
+  color: $white
+  padding: 3rem 0 1rem
+
+.footer-content
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  gap: 2rem
+  margin-bottom: 2rem
+
+.footer-section
+  h4
+    margin-bottom: 1rem
+    color: $primary-color
+
+  p
+    margin-bottom: 0.5rem
+    color: #bbb
+
+.footer-bottom
+  text-align: center
+  padding-top: 2rem
+  border-top: 1px solid #444
+  color: #bbb
+
+// Animations
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translateY(30px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+// Scrollbar personalizada
+::-webkit-scrollbar
+  width: 8px
+
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background: $primary-color
+  border-radius: 4px
+
+::-webkit-scrollbar-thumb:hover
+  background: darken($primary-color, 10%)
