@@ -1,3 +1,5 @@
+[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20meu%20site%20de%20Cl%C3%ADnica%20de%20Massagens%20com%20a%20Valkhan%20Tech.)
+
 # Modelo Pizzaria Delícia
 
 Este modelo foi desenvolvido para pizzarias e restaurantes delivery que desejam ter uma presença online moderna, responsiva e eficiente. Com um site próprio, seu negócio ganha mais visibilidade, credibilidade e facilidade para conquistar novos clientes.
@@ -37,11 +39,9 @@ Visual atraente, com imagens de alta qualidade e navegação intuitiva.
 - **E-mail marketing**
 - **Automações e muito mais!**
 
-Entre em contato e leve sua pizzaria para o próximo nível:
+Entre em contato e leve seu negócio para o próximo nível:
 
-- **WhatsApp:** [Clique para conversar](https://wa.me/5511965572558?text=Olá, gostaria de fazer um site para minha pizzaria.)
-- **E-mail:** vendas@valkhan.com.br
-- **Site:** [valkhan.com.br](https://valkhan.com.br)
+[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20meu%20site%20de%20Cl%C3%ADnica%20de%20Massagens%20com%20a%20Valkhan%20Tech.)
 
 ---
 
