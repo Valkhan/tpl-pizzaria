@@ -1,4 +1,4 @@
-[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20meu%20site%20de%20Cl%C3%ADnica%20de%20Massagens%20com%20a%20Valkhan%20Tech.)
+[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20um%20site%20para%20minha%20Pizzaria%20com%20a%20Valkhan%20Tech)
 
 # Modelo Pizzaria Delícia
 
@@ -41,7 +41,7 @@ Visual atraente, com imagens de alta qualidade e navegação intuitiva.
 
 Entre em contato e leve seu negócio para o próximo nível:
 
-[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20meu%20site%20de%20Cl%C3%ADnica%20de%20Massagens%20com%20a%20Valkhan%20Tech.)
+[➡️ Fale com a Valkhan Tech](https://valkhan.com.br) | WhatsApp: [Clique aqui](https://wa.me/5511965572558?text=Gostaria%20de%20fazer%20um%20site%20para%20minha%20Pizzaria%20com%20a%20Valkhan%20Tech)
 
 ---
 
